@@ -6441,3 +6441,24 @@ p-treeselect.ng-invalid.ng-dirty > .p-treeselect {
 .imageHead {
   content: url("assets/icons/devchallenges.svg");
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--surface-400);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--surface-500);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--surface-700);
+}
