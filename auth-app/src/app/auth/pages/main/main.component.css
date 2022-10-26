@@ -23,7 +23,7 @@
   align-items: center;
 }
 
-:host ::ng-deep .p-inputswitch.p-inputswitch-checked .p-inputswitch-slider,
+/* :host ::ng-deep .p-inputswitch.p-inputswitch-checked .p-inputswitch-slider,
 :host
   ::ng-deep
   .p-inputswitch.p-inputswitch-checked:hover
@@ -33,4 +33,4 @@
 
 :host ::ng-deep .p-inputswitch.p-focus .p-inputswitch-slider {
   box-shadow: 0 0 0 1px var(--indigo-400);
-}
+} */
