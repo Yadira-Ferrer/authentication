@@ -1,15 +1,22 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { ThemeService } from 'src/app/services/theme.service';
 
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
-  styleUrls: ['./main.component.css']
+  styleUrls: ['./main.component.css'],
 })
-export class MainComponent implements OnInit {
+export class MainComponent {
+  theme = 'arya-blue';
 
-  constructor() { }
+  constructor(private themeService: ThemeService) {}
 
-  ngOnInit(): void {
+  handleChangeTheme() {
+    this.themeService.switchTheme(this.theme);
   }
 
+  changeTheme(theme: string) {
+    this.theme = theme;
+    this.themeService.switchTheme(theme);
+  }
 }

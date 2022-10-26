@@ -1,1 +1,26 @@
-<p>main works!</p>
+<!-- Header Theme -->
+<div class="theme-toggle">
+  <p (click)="changeTheme('saga-blue')">
+    <i
+      class="pi pi-sun toggle-icon color"
+      [style.color]="theme === 'saga-blue' ? 'var(--orange-500)' : ''"
+    ></i>
+  </p>
+  <p-inputSwitch
+    styleClass="mx-3"
+    [(ngModel)]="theme"
+    (onChange)="handleChangeTheme()"
+    trueValue="arya-blue"
+    falseValue="saga-blue"
+  ></p-inputSwitch>
+  <p (click)="changeTheme('arya-blue')">
+    <i
+      class="pi pi-moon toggle-icon"
+      [style.color]="theme === 'arya-blue' ? 'var(--indigo-300)' : ''"
+    ></i>
+  </p>
+</div>
+
+<div class="limiter">
+  <router-outlet></router-outlet>
+</div>
