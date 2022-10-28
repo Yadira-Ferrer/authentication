@@ -18,7 +18,8 @@
 }
 
 .submit-btn {
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.1rem;
+  border-radius: 6px;
 }
 
 .mute-text {
