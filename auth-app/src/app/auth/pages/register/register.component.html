@@ -1,5 +1,5 @@
 <div class="container">
-  <div class="login-container">
+  <div class="register-container">
     <div class="header">
       <img class="imageHead" alt="devchallenges logo" />
       <h4>Join thousands of learners from around the world</h4>
@@ -30,37 +30,7 @@
       ></button>
     </form>
     <div>
-      <p class="mute-text">or continue with these social profile</p>
-      <div class="social-buttons">
-        <button
-          pButton
-          pRipple
-          type="button"
-          icon="pi pi-google"
-          class="p-button-rounded p-button-secondary p-button-outlined"
-        ></button>
-        <button
-          pButton
-          pRipple
-          type="button"
-          icon="pi pi-facebook"
-          class="p-button-rounded p-button-secondary p-button-outlined"
-        ></button>
-        <button
-          pButton
-          pRipple
-          type="button"
-          icon="pi pi-twitter"
-          class="p-button-rounded p-button-secondary p-button-outlined"
-        ></button>
-        <button
-          pButton
-          pRipple
-          type="button"
-          icon="pi pi-github"
-          class="p-button-rounded p-button-secondary p-button-outlined"
-        ></button>
-      </div>
+      <app-social-buttons></app-social-buttons>
       <p class="mute-text">
         Already a member? <a routerLink="/auth/login">Login</a>
       </p>

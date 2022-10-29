@@ -3,7 +3,7 @@
   margin: 0;
 }
 
-.login-container {
+.register-container {
   border: 1px solid var(--gray-500);
   border-radius: 20px;
   background-color: var(--surface-a);
@@ -29,18 +29,12 @@
 .mute-text {
   font-size: 12px;
   text-align: center;
-  color: var(--gray-500);
+  color: var(--gray-600);
 }
 
 .mute-text a {
   text-decoration: none;
   color: var(--primary-color);
-}
-
-.social-buttons {
-  display: flex;
-  justify-content: center;
-  margin: 1.2rem 0;
 }
 
 .credits {
@@ -74,7 +68,7 @@
     width: 100%;
   }
 
-  .login-container {
+  .register-container {
     height: 600px;
     justify-content: space-around;
   }

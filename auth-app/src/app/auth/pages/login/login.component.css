@@ -25,18 +25,12 @@
 .mute-text {
   font-size: 12px;
   text-align: center;
-  color: var(--gray-500);
+  color: var(--gray-600);
 }
 
 .mute-text a {
   text-decoration: none;
   color: var(--primary-color);
-}
-
-.social-buttons {
-  display: flex;
-  justify-content: center;
-  margin: 1.2rem 0;
 }
 
 .credits {
