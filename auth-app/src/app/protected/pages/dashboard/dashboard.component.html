@@ -1,1 +1,22 @@
-<h1>Dashboard Works</h1>
+<div class="menu">
+  <div>
+    <img class="imageHead mr-2" />
+  </div>
+  <div (click)="menu.toggle($event)">
+    <div class="avatar-container">
+      <p-avatar
+        image="assets/avatar/avatar-demo.jpg"
+        styleClass="mr-2"
+      ></p-avatar>
+      <span>Xanthe Neal</span>
+      <i class="pi pi-angle-down"></i>
+    </div>
+  </div>
+</div>
+
+<p-menu
+  #menu
+  [popup]="true"
+  [model]="items"
+  styleClass="mt-1 menu-option"
+></p-menu>
